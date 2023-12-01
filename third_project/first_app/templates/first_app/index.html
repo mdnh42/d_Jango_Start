@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+
+        <style>
+            body {
+                font-family: 'Arial', sans-serif;
+                background-color: #f0f0f0;
+                color: #333;
+                margin: 20px;
+            }
+
+            h1 {
+                color: #007bff;
+            }
+
+            p {
+                font-size: 16px;
+            }
+
+            ul {
+                list-style: none;
+                padding: 0;
+
+            }
+
+            li {
+                margin-bottom: 10px;
+                padding: 0 20px;
+                display: flex;
+                /* Inline style for left and right padding */
+            }
+
+            table {
+                border-collapse: collapse;
+                width: 500px;
+            }
+
+            th,
+            td {
+                border: 1px solid #ddd;
+                padding: 8px;
+                text-align: left;
+            }
+
+            th {
+                background-color: #007bff;
+                color: white;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Django</h1>
+        <p>Writer {{author}}</p>
+        <p>If you are 18 or above. Existing Driving License or Not </p>
+        {% if age >= 18 %}
+        <p>Wow! You are eligible . Your Age {{age}} </p>
+        {% else %}
+        <p>Uff! You are not eligible . Your Age {{age}}</p>
+        {% endif%}
+
+        <h2>Our Courses</h2>
+        <ul style="display:grid">
+            <li style="padding: 0 20px;">ID</li>
+            <li style="padding: 0 20px;">Course</li>
+            <li style="padding: 0 20px;">Teacher</li>
+            {% for i in courses %}
+            <li style="padding: 0 20px;">{{ i.id }}</li>
+            <li style="padding: 0 20px;">{{ i.course_name }}</li>
+            <li style="padding: 0 20px;">{{ i.teacher_name }}</li>
+            {% endfor %}
+        </ul>
+    </body>
+
+</html>

@@ -132,3 +132,25 @@ Step # 9: Install Globally (pip install django)
 # Set urls and views 
 
 
+
+ ================= Create Project =============== 
+
+ ## Create Project and Set views.py 
+    - Create template under main project 
+    - Create HTML file under template 
+    - set teamplate view
+    - Rendering template from application 
+    - Template uses html python combined and (Access to write to html and python)
+
+## Django Template Language (IF-ELSE)
+
+
+
+
+## Django Template Language (FOR LOOP)
+
+
+
+
+## Django Template Language (Filtering)
+
